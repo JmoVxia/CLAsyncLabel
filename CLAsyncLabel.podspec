@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.version      = '1.0.0'
   s.summary      = 'Swift版异步绘制Label'
   s.description  = <<-DESC
-                   异步绘制文本.
+                   CLAsyncLabel 是一个用于 iOS 的 Swift 异步绘制文本的库。它提供了高效的文本渲染方法，避免了主线程阻塞，提高了应用的流畅度和响应速度。
                    DESC
   s.homepage     = 'https://github.com/JmoVxia/CLAsyncLabel'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }

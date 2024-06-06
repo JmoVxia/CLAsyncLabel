@@ -65,10 +65,10 @@ public extension CLAsyncLabel {
 
     override func sizeThatFits(_ size: CGSize) -> CGSize {
         guard let attributedString = attributedText else { return .zero }
-        let constrainedSize = size == .zero ? CGSize(width: preferredMaxLayoutWidth > 0 ? preferredMaxLayoutWidth : .greatestFiniteMagnitude, height: .greatestFiniteMagnitude) : CGSize(width: preferredMaxLayoutWidth > 0 ? min(size.width, preferredMaxLayoutWidth) : size.width, height: .greatestFiniteMagnitude)
+        let constrainedSize = size == .zero ? CGSize(width: preferredMaxLayoutWidth > 0 ? preferredMaxLayoutWidth : .greatestFiniteMagnitude, height: .greatestFiniteMagnitude) : CGSize(width: preferredMaxLayoutWidth > 0 ? preferredMaxLayoutWidth : size.width, height: .greatestFiniteMagnitude)
         let framesetter = CTFramesetterCreateWithAttributedString(attributedString)
         let range: CFRange = {
-            var range = CFRangeMake(0, 0)
+            var range = CFRangeMake(0, attributedString.length)
             let path = CGPath(rect: CGRect(origin: .zero, size: constrainedSize), transform: nil)
             let frame = CTFramesetterCreateFrame(framesetter, CFRangeMake(0, 0), path, nil)
             guard let lines = CTFrameGetLines(frame) as? [CTLine] else { return range }
@@ -125,7 +125,7 @@ extension CLAsyncLabel: CLAsyncLayerDelegate {
         context.addPath(textPath)
 
         let framesetter = CTFramesetterCreateWithAttributedString(attributedString)
-        let frame = CTFramesetterCreateFrame(framesetter, CFRangeMake(0, 0), textPath, nil)
+        let frame = CTFramesetterCreateFrame(framesetter, CFRangeMake(0, attributedString.length), textPath, nil)
         CTFrameDraw(frame, context)
     }
 }

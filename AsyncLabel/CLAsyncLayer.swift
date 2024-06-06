@@ -56,7 +56,6 @@ public extension CLAsyncLayer {
     }
 
     override func display() {
-        super.contents = super.contents
         display(isAsynchronous)
     }
 

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2D20C6664F7D3837B8B3A17A /* libPods-CLAsyncLabel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62186EBD220701B7D37008E7 /* libPods-CLAsyncLabel.a */; };
+		4F4E14A72E88CA1800A8414A /* AsyncLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4E14A62E88CA1800A8414A /* AsyncLabelCell.swift */; };
 		5BC61B0B2C11527300862A1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC61B0A2C11527300862A1C /* AppDelegate.swift */; };
 		5BC61B122C11527300862A1C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5BC61B112C11527300862A1C /* Base */; };
 		5BC61B142C11527600862A1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BC61B132C11527600862A1C /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F4E14A62E88CA1800A8414A /* AsyncLabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncLabelCell.swift; sourceTree = "<group>"; };
 		5BC61B072C11527300862A1C /* CLAsyncLabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLAsyncLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BC61B0A2C11527300862A1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BC61B112C11527300862A1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				5BC61B2B2C11577100862A1C /* NSMutableAttributedString+Extension.swift */,
 				5BC61B0A2C11527300862A1C /* AppDelegate.swift */,
 				5BC61B282C11557C00862A1C /* ViewController.swift */,
+				4F4E14A62E88CA1800A8414A /* AsyncLabelCell.swift */,
 				5BC61B102C11527300862A1C /* Main.storyboard */,
 				5BC61B132C11527600862A1C /* Assets.xcassets */,
 				5BC61B152C11527600862A1C /* LaunchScreen.storyboard */,
@@ -142,7 +145,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1640;
 				TargetAttributes = {
 					5BC61B062C11527300862A1C = {
 						CreatedOnToolsVersion = 15.4;
@@ -189,9 +192,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CLAsyncLabel/Pods-CLAsyncLabel-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CLAsyncLabel/Pods-CLAsyncLabel-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -252,6 +259,7 @@
 				5BC61B0B2C11527300862A1C /* AppDelegate.swift in Sources */,
 				5BC61B2C2C11577100862A1C /* NSAttributedString+Extension.swift in Sources */,
 				5BC61B2D2C11577100862A1C /* NSMutableAttributedString+Extension.swift in Sources */,
+				4F4E14A72E88CA1800A8414A /* AsyncLabelCell.swift in Sources */,
 				5BC61B242C11540F00862A1C /* CLAsyncLayer.swift in Sources */,
 				5BC61B272C11549F00862A1C /* CLTransaction.swift in Sources */,
 			);
@@ -314,6 +322,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 533J5B8T42;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -377,6 +386,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 533J5B8T42;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -406,7 +416,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 533J5B8T42;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CLAsyncLabel/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -439,7 +448,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 533J5B8T42;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CLAsyncLabel/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

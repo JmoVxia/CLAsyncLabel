@@ -1,0 +1,20 @@
+PODS:
+  - SnapKit (5.7.1)
+  - SwiftFormat/CLI (0.57.2)
+
+DEPENDENCIES:
+  - SnapKit
+  - SwiftFormat/CLI
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
+    - SwiftFormat
+
+SPEC CHECKSUMS:
+  SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
+  SwiftFormat: 7a87845c4d54d5c1600e46b4d2d02408aab3a129
+
+PODFILE CHECKSUM: 6a0699c9b00dfd6256bd21c50a94431e6c3d8851
+
+COCOAPODS: 1.16.2
